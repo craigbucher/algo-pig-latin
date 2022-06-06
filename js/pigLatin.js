@@ -12,7 +12,7 @@ exports.translate = function(english) {
         } else if ((/^([^aeiouAEIOU][qQ]u)/).test(word)){
             pigLatin.push(word.substring(3) + word.substring(0,3) + "ay"); 
         //word starts with qu
-        } else if ((/(^qu|Qu)/).test(word)){
+        } else if ((/^(qu|Qu)/).test(word)){
             pigLatin.push(word.substring(2) + word.substring(0,2) + "ay");
         // starts with 3 consonants
         } else if ((/^([^aeiouAEIOU]){3}/).test(word)){
